@@ -3110,7 +3110,7 @@ body.search-is-visible {
 
 @media screen and (max-width:600px) {
   .s-content {
-    padding-top: 12.6rem;
+    padding-top: 100px;
   }
 
   .content__page {

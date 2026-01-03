@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Jairo José Rondón Santos</title>
+    <meta name="description" content="Portafolio y Blog del Ingeniero Jairo Rondon">
+    <meta name="author" content="Jairo Jose Rondon Santos">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/vendor.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="../../js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+
+</head>
+
+<body class="ss-bg-white">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="../../index.html">
+                        <img src="../../images/logo.svg" alt="Homepage">
+                    </a>
+                </div>
+                <a href="#0" class="header__menu-toggle"><span>Menu</span></a>
+            </div>
+            <nav class="header__nav-wrap">
+                <ul class="header__nav">
+                    <li class="current"><a href="../../index.html" title="">Inicio del  blog</a></li>
+                    <li class="has-children">
+                        <a href="#0" title="">Categorias</a>
+                        <ul class="sub-menu">
+                            <li><a href="../bitacora.html">Bitácora</a></li>
+                            <li><a href="../capsulas.html">Cápsulas</a></li>
+                            <li><a href="../software.html">Software</a></li>
+                            <!--
+                            <li><a href="category.html">Climatización</a></li>
+                            <li><a href="category.html">Cursos</a></li>
+                            <li><a href="category.html">Energía</a></li>
+                            <li><a href="category.html">Mantenimiento</a></li>
+                            <li><a href="category.html">Varios</a></li>
+                            -->
+                        </ul>
+                    </li>
+                    <li><a href="https://chaficito.github.io/jairojoserondonsantos/" title="">Acerca de mi</a></li>
+                </ul> <!-- end header__nav -->
+            </nav> <!-- end header__nav-wrap -->
+        </header> <!-- end s-header -->
+
+
+        <!-- site content
+        ================================================== -->
+        <div class="s-content content">
+            <main class="row content__page">
+                <article class="column large-full entry format-standard">
+                    <div class="media-wrap entry__media">
+                        <div class="entry__post-thumb">
+                            <img src="001fig1.jpg" alt="">
+                            <p><i>Figura Nº 1. Ejemplo de aplicación y modelado computacional de Bucles de Expansión en sistemas de tuberías (imagen izquierda cortesía de <a href="https://www.piping-designer.com/index.php/disciplines/civil/structural/2624-expansion-loop-bend-drawings">Milbury, M., Ratzlaff, J.</a> e imagen derecha de producción propia con el software AutoPIPE).</i></p>
+                        </div>
+                    </div>
+
+                    <div class="content__page-header entry__header">
+                        <h1 class="display-1 entry__title">
+                        Introducción a los Bucles de Expansión en Sistemas de Tuberías
+                        </h1>
+                        <ul class="entry__header-meta">
+                            <li class="author">Por <a href="https://chaficito.github.io/jairojoserondonsantos/">Jairo J. Rondón S.</a></li>
+                            <li class="date">Enero 02, 2026</li>
+                            <li class="cat-links">
+                                <a href="../capsulas.html">Cápsulas</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end entry__header -->
+
+                    <div class="entry__content">
+                        <h2>Introducción y Definiciones</h2>
+
+                        <p>
+                        Como bien se conoce los materiales se expanden o contraen dependiendo de la temperatura a la cual son sometidos, y el caso de las tuberías de procesos energéticos o industriales no son la excepción. Las tuberías se emplean para transportar fluidos de diversas propiedades físicas que pueden afectar las tuberías y su anclaje, produciendo esfuerzos internos que pudieran originar grietas y roturas con graves consecuencias. Es por esto que todo sistema de tubería debe diseñarse de tal manera que se le permita su libre expansión y contracción, para ello se tiene como posible solución el uso de Bucles o Liras de Expansión que se asocian con guías y anclajes para absorber en cierto grado los movimientos de expansión y contracción producto de los cambios de temperatura entre la instalación y la operación o entre las paradas y las puestas en marcha.
+                        </p>
+                        
+                        <div class="media-wrapv2 entry__media">
+                            <div class="entry__post-thumb">
+                                <img src="001fig2.jpg" alt="" >
+                                <p><i>Figura Nº 2. Ejemplo de los desplazamientos generados en un tramo de tubería con un bucle de expansión 2D tipo U producto de la dilatación térmica (imagen izquierda cortesía de <a href="https://www.engineeringcivil.com/knowing-expansion-and-contraction-of-piping-systems.html">Singh, K.</a>).</i></p>
+                            </div>
+                        </div>
+
+                        <h2>Ecuaciones Básicas</h2>
+
+                        <p>
+                        Los Bucles de Expansión pueden ser de tipo 2D o 3D y generalmente en forma de “U”, “Z” o “L” tal como se muestra en la siguiente imagen. A continuación, se presentan ecuaciones que se pueden emplear para calcular las mínimas longitudes para estos bucles de expansión para el caso bidimensional. 
+                        </p>
+
+                        <p>
+                        <strong>Para bucles en forma de "L":</strong>
+                        <math>
+                            <mrow><mi>O</mi></mrow>
+                            <mo>=</mo>
+                            <msup>
+                                <mrow>
+                                    <mo>(</mo>
+                                    <mn>0.314</mn>
+                                    <mo>*</mo>
+                                    <mi>D</mi>
+                                    <mo>*</mo>
+                                    <mi>L</mi>
+                                    <mo>*</mo>
+                                    <mi>ΔT</mi>
+                                    <mo>)</mo>
+                                </mrow>
+                                <mn>1/2</mn>
+                            </msup>
+                        </math>
+                        <br>
+                        <strong>Para bucles en forma de "Z":</strong>
+                        <math>
+                            <mrow><mi>O</mi></mrow>
+                            <mo>=</mo>
+                            <msup>
+                                <mrow>
+                                    <mo>(</mo>
+                                    <mn>0.310</mn>
+                                    <mo>*</mo>
+                                    <mi>D</mi>
+                                    <mo>*</mo>
+                                    <mi>L</mi>
+                                    <mo>*</mo>
+                                    <mi>ΔT</mi>
+                                    <mo>)</mo>
+                                </mrow>
+                                <mn>1/2</mn>
+                            </msup>
+                        </math>
+                        <br>
+                        <strong>Para bucles en forma de "U":</strong>
+                        <math>
+                            <mrow><mi>O</mi></mrow>
+                            <mo>=</mo>
+                                <mrow>
+                                    <mn>0.041</mn>
+                                    <mo>*</mo>
+                                    <msup><mi>D</mi><mn>0.48</mn></msup>
+                                    <mo>*</mo>
+                                    <msup><mi>L</mi><mn>0.46</mn></msup>
+                                    <mo>*</mo>
+                                    <msup><mi>ΔT</mi><mn>0.46</mn></msup>
+                                </mrow>
+                        </math>
+                        <br>
+                        <br>
+                        Donde <math><mi>O</mi></math> es la Longitud mínima del bucle en [Pies], <math><mi>D</mi></math> es el Diámetro exterior de la tubería en [Pulgadas], <math><mi>L</mi></math> es la Distancia entre anclajes o empotramientos en [Cientos de Pies] de longitud y <math><mi>∆T</mi></math> es la Temperatura en la tubería en grados [Fahrenheit].
+                        <br>
+                        <br>
+                        “Cabe destacar que las Guías que se muestran en las cercanías de los Bucles de Expansión se utilizan para contener el movimiento lateral o efecto resorte que puede aparecer en la tubería al estar sometida a determinados esfuerzos” (López, M.), de esta forma la expansión se dirige a efectivamente a donde se estima, es decir al bucle y no otros tramos de tuberías.
+                        </p>
+
+                        <div class="media-wrapv2 entry__media">
+                            <div class="entry__post-thumb">
+                                <img src="001fig3.jpg" alt="" >
+                                <p><i>Figura Nº 3. Imagen Izquierda: Diferencias entre bucles tipo U bidimensional y tridimensional (imagen cortesía de <a href="https://makepipingeasy.com/a-presentation-on-expansion-loops/">Ahmad, R.</a>). Imagen Derecha: Representación de las mínimas longitudes para los bucles de expansión para el caso bidimensional (imagen cortesía de <a href="https://drive.google.com/file/d/1YThMh522jAQD89BW_UuQoombvRsCVXwr/view?usp=drive_link">López, M.</a>).</i></p>
+                            </div>
+                        </div>
+
+                        <h2>Consideraciones</h2>
+                        
+                        <p>
+                        Es importante destacar que la expansión o contracción térmica se presenta tanto longitudinal como circunferencialmente, pero este último movimiento puede ser despreciable debido a que usualmente no presenta interferencia con los soportes si estos se diseñan de acuerdo a la normativa. El verdadero problema ocurre al momento que el movimiento axial de la tubería, producto de la temperatura, desplaza algún soporte de la misma o interfiere con algún elemento del sistema como lo podría ser una Bomba Hidráulica.
+                        </p>
+
+                        <p>
+                        Adicionalmente es importante resaltar que, donde sea físicamente imposible aplicar bucles de expansión para absorber los movimientos de la tubería, se deben utilizar juntas metálicas de expansión o mangueras metalizas flexibles. En la imagen se muestra un ejemplo de Junta Metálica de Deslizamiento Axial “que consisten de dos segmentos donde uno se desliza dentro del otro permitiendo absorber los movimientos axiales” (Singh, K.).
+                        </p>
+
+                        <div class="media-wrapv2 entry__media">
+                            <div class="entry__post-thumb">
+                                <img src="001fig4.jpg" alt="" >
+                                <p><i>Figura Nº 4. Imagen Superior: Diagrama longitudinal de una Junta Metálica de Deslizamiento Axial indicando sus partes caracterisitcas (imagen cortesía de <a href="https://www.engineeringcivil.com/knowing-expansion-and-contraction-of-piping-systems.html">Singh, K.</a>). Imagen Inferior: Arreglo de tuberias con multiples bucles de expansion en paralelo (imagen cortesía de <a href="https://buildipedia.com/knowledgebase/division-23-heating-ventilating-and-air-conditioning/23-05-00-common-work-results-for-hvac/23-05-16-expansion-fittings-and-loops-for-hvac-piping/23-05-16-expansion-fittings-and-loops-for">Buildipedia Staff</a>).</i></p>
+                            </div>
+                        </div>
+
+                        <p>
+                        El uso de los bucles de expansión también involucra sus respectivas desventajas como lo serían un aumento de las pérdidas de carga por fricción y el aumento en la carga que reciben los soportes en la sección donde se proyecte el bucle de expansión, este último aspecto se acentúa al trabajar en áreas con gran presencia de otras líneas tuberías.
+                        </p>
+                        
+                        <h2>Simulación con AutoPIPE</h2>
+
+                        <p>
+                        Bentley AutoPIPE es una aplicación avanzada de modelado, análisis y diseño para el cálculo de la presión, la carga y la deformación de las tuberías bajo diversas condiciones de carga, desde aquellas de caracter térmico hasta sísmico. Si bien existen múltiples softwares similares que pueden poseer mayores o menores ventajas en el Curso Gratis "Introducción al Estrés de Tuberías con AutoPIPE" de <a href="https://theindustrial-academy.com/courses/fundamentals-of-piping-stress-analysis-with-autopipe/">Formación Industrial</a> se pueden aprender de forma rápida y sencilla los fundamentos para iniciarse en Análisis de Sistemas de Tuberías.
+                        </p>
+
+                        <div class="media-wrapv2 entry__media">
+                            <div class="entry__post-thumb">
+                                <img src="001fig5.jpg" alt="" >
+                                <p><i>Figura Nº 5. Imagen Izquierda: Modelado básico de un Bucle de Expansión 2D tipo U y Ejemplo exagerado de los desplazamientos de un sistema de tuberías produciendo a su vez la deformación en la estructura de soporte por las altas temperaturas (imagenes de producción propia).</i></p>
+                            </div>
+                        </div>
+
+                        <h2>Fuentes Bibliográficas</h2>
+
+                        <ul>
+                            <li><strong>Ahmad, R.</strong> (sf). A Presentation on Expansion Loops. [Página Web]. Disponible en: <a href="https://makepipingeasy.com/a-presentation-on-expansion-loops/">makepipingeasy.com</a></li>
+                            <li><strong>Buildipedia Staff.</strong> (2009). Expansion Fittings and Loops for HVAC Piping. [Página Web]. Disponible en: <a href="https://buildipedia.com/knowledgebase/division-23-heating-ventilating-and-air-conditioning/23-05-00-common-work-results-for-hvac/23-05-16-expansion-fittings-and-loops-for-hvac-piping/23-05-16-expansion-fittings-and-loops-for">buildipedia.com</a></li>
+                            <li><strong>Kumar, A.</strong> (sf). Pipe Epansion Loops on the Piping or Pipeline Systems. [Página Web]. Disponible en: <a href="https://whatispiping.com/expansion-loop-on-piping-system/">whatispiping.com</a></li>
+                            <li><strong>Lopez, M.</strong> (sf). Instalaciones Mecánicas, Cuarta Parte: Diagramas Unifilares e Instalaciones con Tuberías. pp. 17-18.</li>
+                            <li><strong>Milbury, M., Ratzlaff, J.</strong> (sf). Expansion Loop. [Página Web]. Disponible en: <a href="https://www.piping-designer.com/index.php/disciplines/civil/structural/2624-expansion-loop-bend-drawings">piping-designer.com</a></li>
+                            <li><strong>Singh, K.</strong> (sf). Knowing expansion and contraction of piping systems. [Página Web]. Disponible en: <a href="https://www.engineeringcivil.com/knowing-expansion-and-contraction-of-piping-systems.html">engineeringcivil.com</a></li>
+                            <li><strong>Stewart, M. </strong> (2016). Surface Production Operations. Volume 3: Facility Piping and Pipeline System. Chapter 10: Pipe expansion and flexibility. pp. 731-812. Disponible en: <a href="https://www.sciencedirect.com/science/article/abs/pii/B9781856178082000109">sciencedirect.com</a></li>
+                        </ul>
+
+                    </div> <!-- end entry content -->
+                    <!--
+                    <div class="entry__pagenav">
+                        <div class="entry__nav">
+                            <div class="entry__prev">
+                                <a href="#0" rel="prev">
+                                    <span>Previous Post</span>
+                                    Tips on Minimalist Design 
+                                </a>
+                            </div>
+                            <div class="entry__next">
+                                <a href="#0" rel="next">
+                                    <span>Next Post</span>
+                                    Less Is More 
+                                </a>
+                            </div>
+                        </div>
+                    </div> --> 
+                    <!-- end entry__pagenav -->
+                </article> <!-- end column large-full entry-->
+
+            </main>
+
+        </div> <!-- end s-content -->
+
+
+        <!-- footer
+        ================================================== -->
+        <footer class="s-footer">
+            <div class="row">
+                <div class="column large-full footer__content">
+                    <div class="footer__copyright">
+                        <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script></span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                        <span>Modified by <a href="https://github.com/chaficito">chaficito</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </footer>
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/plugins.js"></script>
+    <script src="../../js/main.js"></script>
+</body>

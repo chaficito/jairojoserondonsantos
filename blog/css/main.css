@@ -418,7 +418,7 @@ ul.disc li::before {
     width          : 8px;
     height         : 8px;
     border-radius  : 50%;
-    background     : #33998a;
+    background     : #000000;
     position       : absolute;
     left           : -16px;
     top            : 11px;
